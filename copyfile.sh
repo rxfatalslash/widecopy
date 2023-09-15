@@ -4,8 +4,11 @@
 filename=$1
 dest_folder=$2
 
-# Devices
-devices="192.168.1.[•10-150]"
+# List of devices
+devices=()
+for octeto in {10..150}; do
+    devices+=("192.168.1.$octeto")
+done
 
 # Open multiple SSH sessions
 for device in $devices; do
