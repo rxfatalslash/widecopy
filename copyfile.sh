@@ -12,9 +12,10 @@ done
 
 # Open multiple SSH sessions
 for device in "${devices[@]}"; do
-    echo "Opening SSH session to $device"
     scp $filename $USER@$device:$dest_folder
 done
 
 # Wait for all SSH sessions to finish
 wait
+
+echo "Tarea terminada con éxito"
