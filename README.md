@@ -4,7 +4,7 @@
 <br><br>
 ** Desde la terminal ejecuta los siguientes comandos**
 * Descarga el script
-´´´
+```
 curl https://raw.githubusercontent.com/rxfatalslash/widecopy/main/copyfile.sh -o $HOME/copyfile.sh
 ```
 * Concede permisos de ejecución
