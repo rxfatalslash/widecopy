@@ -16,7 +16,7 @@ done
 
 # Open multiple SSH sessions
 for device in "${devices[@]}"; do
-    scp $filename $USER@$device:$dest_folder
+    scp $filename $USER@$device:$dest_folder & > /dev/null 2>&1
 
     if [ $? -eq 0 ]; then
         printf "$device [%sSUCCESS%s]\n" "${CGR}" "${CNC}"
