@@ -2,6 +2,8 @@
 
 CRE=$(tput setaf 1)
 CGR=$(tput setaf 2)
+CYE=$(tput setaf 3)
+CBL=$(tput setaf 4)
 BLD=$(tput bold)
 CNC=$(tput sgr0)
 
@@ -12,7 +14,7 @@ dest_folder=$2
 logo () {
 
     local text="${1:?}"
-    echo "
+    echo -en "
     WOdddddxk0KNW                                            WNK0kxdddddOW 
      Wo........',:lx0N                                    N0xl:,'........oW 
       Xc.,clcc:;'....;lON                              NOl;....';:cclc,.cX  
@@ -32,7 +34,8 @@ done
 
 logo "rxfatalslash"
 printf "%s%sIniciando proceso de copia...%s" "${BLD}" "${CRE}" "${CNC}"
-sleep 3
+sleep 5
+clear
 
 # Open multiple SSH sessions
 for device in "${devices[@]}"; do
