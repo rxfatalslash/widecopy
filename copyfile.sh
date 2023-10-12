@@ -19,9 +19,9 @@ for device in "${devices[@]}"; do
     scp $filename $USER@$device:$dest_folder
 
     if [ $? -eq 0 ]; then
-        echo "$device [%sSUCCESS%s]\n" "${CGR}" "${CNC}"
+        printf "$device [%sSUCCESS%s]\n" "${CGR}" "${CNC}"
     else
-        echo "$device [%sFAIL%s]\n" "${CRE}" ${CNC}
+        printf "$device [%sFAIL%s]\n" "${CRE}" ${CNC}
     fi
 done
 
