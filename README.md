@@ -2,7 +2,7 @@
 ## 🖱️ Uso
 ⚠️Este script está diseñado para distribuciones Linux⚠️
 <br><br>
-** Desde la terminal ejecuta los siguientes comandos **
+**Desde la terminal ejecuta los siguientes comandos**
 * Descarga el script
 ```
 curl https://raw.githubusercontent.com/rxfatalslash/widecopy/main/copyfile.sh -o $HOME/copyfile.sh
@@ -16,7 +16,7 @@ chmod +x $HOME/copyfile.sh
 ./copyfile.sh
 ```
 ## Modificación
-** El script comprende un rango de IP desde la 10 hasta la 150, teniendo en cuenta que tu red es 192.168.1.0/24 **
+**El script comprende un rango de IP desde la 10 hasta la 150, teniendo en cuenta que tu red es 192.168.1.0/24**
 <br>
 Si tu red tiene una máscara distinta modifica la variable _devices_
 <br>
