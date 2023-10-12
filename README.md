@@ -13,7 +13,7 @@ chmod +x $HOME/copyfile.sh
 ```
 * Ejecuta el script pasándole dos argumentos, el primero es el archivo que quieres enviar y el segundo es la carpeta destino de los equipos a los que quieres mandarlo
 ```
-./copyfile.sh
+./$HOME/copyfile.sh
 ```
 ## ⌨️ Modificación
 **El script comprende un rango de IP desde la 10 hasta la 150, teniendo en cuenta que tu red es 192.168.1.0/24**
