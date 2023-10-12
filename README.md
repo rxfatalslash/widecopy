@@ -1,6 +1,6 @@
 # 🗳️ Instalación
 ## 🖱️ Uso
-⚠️Este script está diseñado para distribuciones Linux⚠️
+**⚠️Este script está diseñado para distribuciones Linux⚠️**
 <br><br>
 **Desde la terminal ejecuta los siguientes comandos**
 * Descarga el script
