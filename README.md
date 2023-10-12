@@ -19,5 +19,4 @@ chmod +x $HOME/copyfile.sh
 **El script comprende un rango de IP desde la 10 hasta la 150, teniendo en cuenta que tu red es 192.168.1.0/24**
 <br>
 * Si tu red tiene una máscara distinta modifica la variable _devices_
-<br>
 * Si quieres modificar el rango de IP modifica el rango del bucle for para la variable _octeto_
