@@ -33,7 +33,13 @@ for octeto in {10..150}; do
 done
 
 logo "rxfatalslash"
-printf "%s%sIniciando proceso de copia...%s" "${BLD}" "${CRE}" "${CNC}"
+
+if [ "$(whoami)" != "root" ]; then
+    printf "%s%s[ERROR] Ejecuta el script como root%s\n\n" "${BLD}" "${CRE}" "${CNC}"
+    exit 1
+fi
+
+printf "%s%s[+] Iniciando proceso de copia...%s" "${BLD}" "${CRE}" "${CNC}"
 sleep 5
 clear
 
